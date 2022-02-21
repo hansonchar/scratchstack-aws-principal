@@ -371,7 +371,7 @@ impl RootUserDetails {
 }
 
 /// Details about a service.
-#[doc(cfg(feature = "service"))]
+// #[doc(cfg(feature = "service"))]
 #[cfg(feature = "service")]
 #[derive(Clone, Debug, PartialEq, Eq)]
 pub struct ServiceDetails<T: Data> {
@@ -387,7 +387,7 @@ pub struct ServiceDetails<T: Data> {
 
 #[cfg(feature = "service")]
 impl<T: Data> ServiceDetails<T> {
-    #[doc(cfg(feature = "service"))]
+    // #[doc(cfg(feature = "service"))]
     /// Create a [ServiceDetails] object
     ///
     /// # Arguments

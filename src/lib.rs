@@ -1,5 +1,5 @@
 #![warn(clippy::all)]
-#![feature(doc_cfg)]
+// #![feature(doc_cfg)]
 
 //! Principals for AWS and AWS-like services.
 //!
@@ -74,7 +74,7 @@ pub enum PrincipalError {
 
     /// Invalid service name. The argument contains the specified service name.
     #[cfg(feature = "service")]
-    #[doc(cfg(feature = "service"))]
+    // #[doc(cfg(feature = "service"))]
     InvalidServiceName(String),
 
     /// Invalid session name. The argument contains the specified session name.

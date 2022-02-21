@@ -51,7 +51,7 @@ pub enum PrincipalActor {
     /// Details for the root user of an account.
     RootUser(RootUserDetails),
 
-    #[doc(cfg(feature = "service"))]
+    // #[doc(cfg(feature = "service"))]
     #[cfg(feature = "service")]
     /// Details for a service.
     Service(ServiceDetails),
@@ -335,7 +335,7 @@ impl PrincipalActor {
     }
 
     #[cfg(feature = "service")]
-    #[doc(cfg(feature = "service"))]
+    // #[doc(cfg(feature = "service"))]
     /// Return a principal for a service.
     ///
     /// # Arguments
